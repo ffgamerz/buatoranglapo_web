@@ -1,0 +1,10 @@
+# Cloudflare Pages configuration for buatoranglapo
+name = "buatoranglapo-web"
+compatibility_date = "2024-01-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+[site]
+bucket = "./dist"
+include_assets = []
