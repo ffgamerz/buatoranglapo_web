@@ -13,14 +13,19 @@ export function Hero() {
     <section 
       id="hero" 
       className="relative min-h-screen flex items-center justify-center text-center text-white"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%), url(${pesRendang})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent pointer-events-none"></div>
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${pesRendang})`,
+          backgroundPosition: 'center top'
+        }}
+      ></div>
+      
+      {/* Light gradient overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20"></div>
+      
       <div className="container mx-auto px-4 relative z-10">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           Masak Cepat, Rasa Memikat – Pes Masakan Tradisional Dalam 10 Minit!
