@@ -88,7 +88,7 @@ export const products: Product[] = [
       shopee: '',
       tiktok: ''
     },
-    comingSoon: true
+    soldOut: true
   },
   {
     id: 'combo-4',

@@ -14,6 +14,7 @@ export interface Product {
     tiktok: string
   }
   comingSoon?: boolean
+  soldOut?: boolean
 }
 
 // Testimonial type
