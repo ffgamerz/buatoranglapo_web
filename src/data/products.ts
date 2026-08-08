@@ -10,7 +10,7 @@ import combo5 from '../assets/images/combo5.png'
 
 export const shopLinks = {
   shopee: 'https://s.shopee.com.my/8AJONHoAqZ',
-  tiktok: '#' // Will be updated when provided
+  tiktok: 'https://vt.tiktok.com/ZS9hWhU1nBrc8-bNBhe/'
 }
 
 export const products: Product[] = [
@@ -26,7 +26,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/6fUaacaH50',
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWh2VUFRvt-cqIO3/'
     }
   },
   {
@@ -41,7 +41,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/1B9e2a2ff7',
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWhYKgSK7m-m0uZ3/'
     }
   },
   {
@@ -56,7 +56,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/40TpPkveHB',
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWhFGAQXb2-FUuKx/'
     }
   },
   {
@@ -71,7 +71,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/AA4Sl6UXOu',
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWhroFcYjW-rU5Pi/'
     }
   },
   {
@@ -86,7 +86,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/10i4RFB3WE',
-      tiktok: '#'
+      tiktok: '#' // No TikTok link provided for Rendang
     }
   },
   {
@@ -101,7 +101,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: 'https://s.shopee.com.my/6AjOU1hGQs',
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWhhaNymcT-NV0Tk/'
     }
   },
   {
@@ -116,7 +116,7 @@ export const products: Product[] = [
     },
     buyLink: {
       shopee: '', // Not available on Shopee
-      tiktok: '#'
+      tiktok: 'https://vt.tiktok.com/ZS9hWhhabGJhK-UzYq1/'
     }
   },
   {
