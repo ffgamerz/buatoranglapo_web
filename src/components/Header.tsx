@@ -41,7 +41,7 @@ export function Header() {
               <span className="text-white font-bold text-xl">🍲</span>
             </div>
             <span className="text-xl lg:text-2xl font-bold text-red-600">
-              BUTORGANGLAPO
+              BUTORANGLAPO
             </span>
           </div>
 
