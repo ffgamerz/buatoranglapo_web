@@ -85,9 +85,10 @@ export const products: Product[] = [
       suitableFor: '🥩 Daging Sapi'
     },
     buyLink: {
-      shopee: 'https://s.shopee.com.my/10i4RFB3WE',
-      tiktok: '#' // No TikTok link provided for Rendang
-    }
+      shopee: '',
+      tiktok: ''
+    },
+    comingSoon: true
   },
   {
     id: 'combo-4',
