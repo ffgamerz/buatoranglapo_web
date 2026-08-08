@@ -1,7 +1,6 @@
-// Hero section component
-import pesRendang from '../assets/images/pes_rendang.png'
-
+// Hero section component - Updated with generated image
 export function Hero() {
+  // Scroll to section function
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -12,42 +11,56 @@ export function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen flex items-center justify-center text-center text-white"
+      className="relative min-h-screen flex items-center justify-center"
     >
-      {/* Background image */}
+      {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${pesRendang})`,
-          backgroundPosition: 'center top'
+          backgroundImage: "url('/images/gemini-hero.png')",
+          backgroundPosition: 'center'
         }}
-      ></div>
+      >
+        {/* Dark gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+      </div>
       
-      {/* Light gradient overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-          Masak Cepat, Rasa Memikat – Pes Masakan Tradisional Dalam 10 Minit!
-        </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-          Tanpa bahan pengawet | Resipi asli | Sedia dimakan | Sesuai untuk semua keluarga
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
-            onClick={() => scrollToSection('products')}
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition transform hover:scale-105 shadow-xl border-2 border-white/20"
-          >
-            Lihat Semua Pes
-          </button>
-          <a 
-            href="#" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-gray-800 transition transform hover:scale-105 shadow-xl"
-          >
-            Beli Sekarang
-          </a>
+      {/* Hero Content */}
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="max-w-2xl text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+            <span className="text-red-600">Masak Cepat, Rasa Memikat</span> <br />
+            <span className="text-white">Pes Masakan Tradisional Dalam 10 Minit!</span>
+          </h1>
+          <p className="text-lg md:text-xl mb-8 max-w-lg leading-relaxed drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
+            Tanpa bahan pengawet | Resipi asli Malaysia | Sedia dimakan | Sesuai untuk semua keluarga
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button
+              onClick={() => scrollToSection('products')}
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold text-lg transition transform hover:scale-105 shadow-xl border-2 border-white/20"
+            >
+              Lihat Semua Pes
+            </button>
+            <a 
+              href="https://shopee.com.my" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-gray-800 transition transform hover:scale-105 shadow-xl"
+            >
+              Beli di Shopee
+            </a>
+          </div>
+          <div className="flex items-center space-x-6 pt-4">
+            <div className="flex items-center">
+              <div className="text-2xl font-bold text-yellow-300">4.9</div>
+              <span className="ml-2 text-sm">⭐ Rating</span>
+            </div>
+            <div className="hidden sm:flex items-center">
+              <div className="w-px h-6 bg-white/30"></div>
+              <div className="ml-3 text-sm">✓ 10 minit siap</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
